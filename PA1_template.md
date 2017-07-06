@@ -72,7 +72,7 @@ for (i in 1:length(whereIsNa)){
 }
 ```
 
-The total number of missing values in the dataset is `numOfNa`.
+The total number of missing values in the dataset is 2304.
 
 
 ```r
@@ -93,6 +93,7 @@ totalMeanEdited   <- round(mean(byDayEdited$steps))
 totalMedianEdited <- round(median(byDayEdited$steps))
 ```
 The mean of total number of steps taken per day, while imputing missing values, is 1.0766 &times; 10<sup>4</sup>. The median is 1.0766 &times; 10<sup>4</sup>.  
+
 From the histogram, we see that imputing missing values increases the bar that is mostly related to the mean total number of steps per day. That is not surprising, since I used the mean total per intercal to fill in for missing values, hence each day that had missing values became an avergae day. Moreover, the same effect can be seen while looking at the new values for the mean and the median, as they barely changed.  
 
 ## Checking for differences between weekend and weekdays
